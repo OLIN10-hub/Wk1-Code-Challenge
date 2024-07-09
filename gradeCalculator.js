@@ -1,5 +1,7 @@
-//get student grade;
-let marks = parseFloat(prompt("enter grade"));
+var prompt = require('prompt-sync')();
+
+let marks_I= prompt('Enter marks');
+let marks = parseInt(marks_I);
 function getStudentGrade(){
     let grade; 
     if (marks < 0 && marks >100) {
